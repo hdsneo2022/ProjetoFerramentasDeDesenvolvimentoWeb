@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/pesquisar.css">
+</head>
+<body style="background-color:#5C16C5;text-align:center; align-content: center">
+    <div class="header">
+        <!-- Seu cabeçalho -->
+    </div>
+
+    <div class="corpo1">
+        <h2>
+            <button type="button" id="pesquisar" name="pesquisar" onclick="mostrarPopup()">PESQUISAR</button>
+        </h2>
+    </div>
+
+    <!-- Sua pop-up de pesquisa -->
+    <div id="popup" style="display: none;">
+        <label for="produtoPesquisa" style="font-size: 30px;">Digite o nome do produto:</label>
+        <input type="text" id="produtoPesquisa">
+        <button onclick="buscarProduto()">Buscar</button>
+        <p id="resultado" style="font-size: 50px;"></p>
+        <button onclick="fecharPopup()">Fechar</button>
+    </div>
+
+    
+
+    <script>
+        function mostrarPopup() {
+            const popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function fecharPopup() {
+            const popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+
+        function buscarProduto() {
+            const nomeProduto = document.getElementById("produtoPesquisa").value;
+            const resultado = document.getElementById("resultado");
+
+            // Procurar o produto na lista de produtos
+            const produtoEncontrado = listaProdutosArray.find(produto => produto.nome === nomeProduto);
+
+            if (produtoEncontrado) {
+                resultado.textContent = `Produto encontrado: ${produtoEncontrado.nome} - Quantidade: ${produtoEncontrado.quantidade}`;
+            } else {
+                resultado.textContent = "Produto não encontrado.";
+            }
+        }
+    </script>
+    <h3>
+    <button type="button" id="voltar" name="voltar" onclick="listaprodutoVoltar()">VOLTAR</button>
+    </h3>
+
+    <script src="/assets/produtos.js"></script>
+    <script src="/assets/script.js"></script>
+</body>
+</html>

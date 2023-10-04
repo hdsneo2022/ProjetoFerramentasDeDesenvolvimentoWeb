@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logado em Usuário/Gerente</title>
+    <link rel="stylesheet" href="/assets/logado.css">
+    
+</head>
+<body style="background-color:#5C16C5;text-align:center; align-content: center">
+
+    <div class="header">
+        <h1>
+            <img src="/assets/default.png" alt="defaultuser" name="default">
+            <span> Logado como Usuário/Gerente</span>
+        </h1>
+    </div>
+
+    <div class="corpo1">
+        <h2>
+            <button type="button" id="produtos" name="prod" onclick="clicaProduto()">PRODUTOS</button>
+            <button type="button" id="cadastrar" name="cad" onclick="clicaCadastrar()">CADASTRAR</button>
+            <button type="button" id="pesquisar" name="pesquisar" onclick="clicaPesquisar()">PESQUISAR</button>
+        </h2>
+
+    </div>
+
+    <div class="corpo2">
+        <h3>
+        <button type="button" id="excluir" name="exc" onclick="removerProduto()">EXCLUIR PRODUTOS</button>
+        <button type="button" id="vendas" name="ven">VENDAS</button>
+        </h3>
+    </div>
+    <div class="footer">
+        <img src="/assets/icon.png" alt="carrinho">
+    </div>
+
+    
+    
+
+    
+    <script src="/assets/produtos.js"></script>
+    <script src="/assets/script.js"></script>
+</body>
+</html>

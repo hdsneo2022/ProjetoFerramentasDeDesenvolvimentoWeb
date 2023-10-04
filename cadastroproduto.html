@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRAR PRODUTO</title>
+    <link rel="stylesheet" href="/assets/cadastroproduto.css">
+    
+</head>
+<body style="background-color:#5C16C5;text-align:center; align-content: center">
+    <div class="header">
+        <h1>
+            <img src="/assets/default.png" alt="defaultuser" name="default">
+            <span> Logado como Usuário/Gerente</span>
+        </h1>
+
+    </div>
+
+    <div class="corpo1">
+        <h2>
+            <button type="button" id="cadastrodeprod" name="cadastrodeprot">CADASTRO DE PRODUTO</button>
+            
+        </h2>
+    </div>
+    
+    <div class="corpo2">
+        <h3>
+            <label for="nomeprod">Nome:</label>
+        <input type="text" id="nomeProdutoInput" name="nomeprod"></input>
+        </h3>
+        
+    </div>
+
+    <div class="corpo3">
+        <h4>
+            <label for="quantprod">Quantidade:</label>
+        <input type="text" id="quantidadeProdutoInput" name="quantprod"></input>
+        </h4>
+        
+    </div>
+
+    <div class="corpo4">
+        <h5>
+            <button type="button" id="voltar" name="voltar" onclick="cadastroVoltar()">VOLTAR</button>
+            <button type="button" id="cadastrar" name="cadastrar" onclick="adicionarProduto2()">CADASTRAR</button>
+            <button type="button" id="removerProduto" name="remover" onclick="removerProduto()">REMOVER</button>
+        </h5>
+        
+    </div class= "corpo5">
+
+    <div id="listagemProdutos"></div>
+
+    
+    <script src="/assets/produtos.js"></script>
+    <script src="/assets/script.js"></script>
+</body>
+</html>

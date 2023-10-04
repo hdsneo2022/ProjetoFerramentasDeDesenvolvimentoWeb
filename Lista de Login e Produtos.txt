@@ -1,0 +1,27 @@
+{ cpf: "123456789-00", senha: "senha123" },
+{ cpf: "987654321-00", senha: "senha456" },
+{ cpf: "555666777-00", senha: "senha789" },
+
+
+
+var listaProdutos = [
+    {nome: "Smartphone Galaxy S21", quantidade: 50},
+    {nome: "Notebook HP Pavilion", quantidade: 30},
+    {nome: "TV 55 polegadas", quantidade: 20},
+    {nome: "Headphone Bluetooth JBL", quantidade: 60},
+    {nome: "Câmera DSLR Canon EOS", quantidade: 15},
+    {nome: "Tênis esportivo Nike Air Max", quantidade: 40},
+    {nome: "Liquidificador Philips Walita", quantidade: 25},
+    {nome: "Relógio inteligente Apple Watch", quantidade: 35},
+    {nome: "Mochila de viagem North Face", quantidade: 10},
+    {nome: "Conjunto de panelas Tramontina", quantidade: 45},
+]
+
+
+
+// Chama a função para listar produtos apenas quando a página é carregada
+document.addEventListener('DOMContentLoaded', function() {
+    adicionarProduto();
+    listarProdutos();
+});
+

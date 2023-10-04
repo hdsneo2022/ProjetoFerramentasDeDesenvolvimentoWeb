@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Produto</title>
+    <link rel="stylesheet" href="/assets/listaproduto.css">
+    
+</head>
+<body style="background-color:#5C16C5;text-align:center; align-content: center">
+    <div class="header">
+        <h1>
+            <img src="/assets/default.png" alt="defaultuser" name="default">
+            <span> Logado como Usuário/Gerente</span>
+        </h1>
+    </div>
+
+    <div class="corpo1">
+        <h2>
+            <button type="button" id="produtoslistado" name="prodlistado" onclick="listarProdutos()">PRODUTOS ENCONTRADOS</button>
+            
+        </h2>
+
+    </div>
+    <div class="corpo2">
+        <h3>LISTA DE PRODUTOS</h3>
+        <ul id="listagemProdutos"></ul>
+        
+    </div>
+
+    <div class="corpo3">
+        <h2>
+            <button type="button" id="voltar" name="voltar" onclick="listaprodutoVoltar()">VOLTAR</button>
+            <button type="button" id="selecionar" name="selecionar" onclick="">SELECIONAR</button>
+            
+        </h2>
+
+    </div>
+
+
+    
+    <script src="/assets/produtos.js"></script>
+    <script src="/assets/script.js"></script>
+</body>
+</html>
